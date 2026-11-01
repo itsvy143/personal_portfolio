@@ -1,0 +1,174 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #44382f;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #795c45;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #44382f;
+    font-weight: bold;
+}
+
+/* Home section */
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#home h1 {
+    font-size: 55px;
+    color: #795c45;
+    margin: 15px 0;
+}
+
+#home h3 {
+    margin-bottom: 20px;
+}
+
+#home p {
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+#home a {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #795c45;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* General section styling */
+section:not(#home) {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #795c45;
+    margin-bottom: 25px;
+}
+
+section:not(#home) p {
+    max-width: 700px;
+    margin: 12px auto;
+    line-height: 1.8;
+}
+
+/* Skills section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+}
+
+/* Projects section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #795c45;
+    margin-bottom: 15px;
+}
+
+/* Contact section */
+#contact {
+    background-color: #eee7de;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
